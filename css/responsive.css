@@ -1,0 +1,10 @@
+@media (min-width: 768px) and (max-width:991px) {
+    .section-header h2{
+    font-size: 40px;
+}
+    .delicious-menu ul li button {
+        font-size: 15px;
+        padding: 8px 10px;
+    }
+
+}
