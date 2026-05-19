@@ -12,26 +12,28 @@
     <nav>
         <div class="container">
             <div class="main-menu">
-                <div class="logo">
-                    <img src="images/Logo.svg" alt="">
-                </div>
-                <div class="menu">
-                    <ul>
-                        <li><a href="#banner">Welcome</a></li>
-                        <li><a href="#delicious-menu">Our Menu</a></li>
-                        <li><a href="#map">Franchise</a></li>
-                        <li><a href="#support">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="buttons">
+    <div class="logo">
+        <img src="images/Logo.svg" alt="">
+    </div>
 
-                    <img src="images/Cart icon.svg" alt="">
+    <button class="menu-toggle">
+        ☰
+    </button>
 
+    <div class="menu">
+        <ul>
+            <li><a href="#banner">Welcome</a></li>
+            <li><a href="#delicious-menu">Our Menu</a></li>
+            <li><a href="#franchise">Franchise</a></li>
+            <li><a href="#support">Contact</a></li>
+        </ul>
+    </div>
 
-                    <img src="./images/Search Icon.svg" alt="">
-
-                </div>
-            </div>
+    <div class="buttons">
+        <img src="images/Cart icon.svg" alt="">
+        <img src="./images/Search Icon.svg" alt="">
+    </div>
+</div>
         </div>
     </nav>
     <!-- ==================== Banner Start =====================-->
@@ -73,9 +75,9 @@
                 </div>
                 <div class="video">
                     <img src="images/image 1102.jpg" alt="">
-                    <button class="play-button">
+                    <!-- <button class="play-button">
                         <img src="images/Polygon.png" alt="">
-                    </button>
+                    </button> -->
                 </div>
             </div>
         </div>
@@ -550,7 +552,14 @@
      </footer>
     <!-- ==================== Footer End =====================-->
 
+<script>
+    const toggleBtn = document.querySelector(".menu-toggle");
+    const menu = document.querySelector(".menu");
 
+    toggleBtn.addEventListener("click", () => {
+        menu.classList.toggle("active");
+    });
+</script>
 </body>
 
 </html>
